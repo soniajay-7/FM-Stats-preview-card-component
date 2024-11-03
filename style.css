@@ -1,0 +1,227 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Gilroy, Arial, sans-serif;
+    outline: none;
+}
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 64px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    color: #ff6b00;
+  }
+  
+  .logo-text {
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff6b00;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-menu-button,
+  .cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .user-icon,
+  .cart-icon,
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .user-menu-button:hover .user-icon,
+  .cart-button:hover .cart-icon {
+    color: #ff6b00;
+  }
+  
+  .user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f5f5f5;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 5;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+    .navbar-container {
+      justify-content: space-between;
+    }
+  
+    .navbar-actions {
+      gap: 8px;
+    }
+  }
+  .body {
+    margin: 4% 12%;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Gilroy, Arial, sans-serif;
+    outline: none;
+  }
+
+  .card {
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  
+  .card-body {
+    display: grid;
+    transition: 0.05s;
+    cursor: pointer;
+    gap: 12px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .card-content {
+    display: grid;
+    transition: 0.05s;
+    cursor: pointer;
+    gap: 12px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .card-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .test {
+    text-decoration: none;
+    color: inherit;
+    outline: 0px;
+    cursor: pointer;
+  }
+  
+  .card-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 0 0 8px;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  .searchItem {
+    padding: 10px;
+    margin: 20px 0px;
+    width: 300px;
+  }
+  .searchItemBtn {
+    padding: 10px;
+    margin: 20px 0px;
+    width: 100px;
+  }

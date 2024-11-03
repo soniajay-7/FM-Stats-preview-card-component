@@ -1,0 +1,22 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Food App",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay Soni",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soniajay-7/Food-Delivery-App.git"
+  },
+  "keywords": [
+    "\"App\""
+  ],
+  "bugs": {
+    "url": "https://github.com/soniajay-7/Food-Delivery-App/issues"
+  },
+  "homepage": "https://github.com/soniajay-7/Food-Delivery-App#readme"
+}
